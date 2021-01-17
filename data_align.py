@@ -1,6 +1,7 @@
 import json
 import os
 import re
+from tqdm import tqdm
 
 
 def remove_french_letters(sent):
@@ -84,7 +85,7 @@ class DataAlign():
 
     def align(self, data):
         aligned = []
-        for item in data:
+        for item in tqdm(data):
             res = {'sent': item['sent'], 'rels': []}
             tmp = ''.join(item['sent'])
             tmp = tmp.replace(' ', '')
@@ -121,4 +122,4 @@ if __name__ == '__main__':
             json.dump(aligned, fw)
 
 
-    print('\nDatasets have been aligned.')
+    print('Datasets have been aligned.')

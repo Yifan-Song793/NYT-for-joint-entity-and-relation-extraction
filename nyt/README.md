@@ -1,2 +1,2 @@
-# NYT-for-joint-entity-and-relation-extraction
-A script to preprocessing NYT dataset for joint entity and relation extraction.
+Download the origin NYT dataset from [here](https://drive.google.com/file/d/10f24s9gM7NdyO3z5OqQxJgYud4NnCJg3/view) and decompress it under this folder.
+Download the raw NYT distant supervised learning dataset from [here](https://drive.google.com/drive/folders/0B--ZKWD8ahE4UktManVsY1REOUk?usp=sharing) and decompress it under this folder.
